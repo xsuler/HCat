@@ -1,0 +1,21 @@
+Name:          ai-homework
+Version:       0.0.0.0
+Cabal-version: >= 1.10
+Build-type:    Simple
+Author:        su le
+Stability:     experimental
+Data-dir:      qml
+Data-files:    *.qml *.png
+
+Executable gui-release
+    Default-language: Haskell2010
+    Main-is: Gui.hs
+    Build-depends:
+        base          >= 4.*,
+        containers    >= 0.5,
+        text          >= 0.11,
+        hsqml         >= 0.3.2.1 
+        unordered-containers >=0.2.5.*
+        matrix        >= 0.2.*
+        stm           >=2.4.4.*
+    GHC-options: -threaded
